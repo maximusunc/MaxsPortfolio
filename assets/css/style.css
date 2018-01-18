@@ -1,0 +1,45 @@
+h1 {
+  color: #66ccff;
+  font-size: 5.2rem; }
+
+#max {
+  margin-left: 10%;
+  border-radius: 100%; }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "Amatic SC", cursive;
+  font-size: 30px; }
+
+main {
+  flex: 1 0 auto; }
+
+header {
+  text-align: center;
+  border-bottom: 2px solid #66ccff;
+  background-color: #004b66; }
+
+.page-footer {
+  background-color: #004b66;
+  color: #66ccff;
+  border-top: 2px solid #66ccff; }
+
+.footer-copyright {
+  border-top: 1px solid #66ccff; }
+
+.section {
+  background-color: #004b66;
+  color: #66ccff;
+  border-top: 2px solid #66ccff;
+  border-bottom: 2px solid #66ccff; }
+
+#media {
+  display: flex;
+  justify-content: space-between; }
+
+#resume {
+  color: white; }
+
+/*# sourceMappingURL=style.css.map */
