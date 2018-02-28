@@ -2,8 +2,12 @@ h1 {
   color: #66ccff;
   font-size: 5.2rem; }
 
+h4 {
+  color: #66ccff; }
+
 #max {
   margin-left: 10%;
+  margin-top: 10%;
   border-radius: 100%; }
 
 body {
