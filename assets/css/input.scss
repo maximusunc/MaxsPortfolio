@@ -28,9 +28,10 @@ main {
     margin-top: 8%;
     border-radius: 100%;
     opacity: 0.7;
+    width: 250px;
 }
 #name {
-    margin-top: 8%;
+    margin-top: 3%;
 }
 .page-footer {
     background-color: $background-color;
@@ -54,14 +55,25 @@ main {
     color: white;
 }
 .project {
-    opacity: 0.9;
+    opacity: 0.8;
+    display: inline-block;
 }
 .project:hover {
     opacity: 1;
+}
+.responsive-img {
+    border-radius: 20px;
 }
 .top {
     text-align: center;
 }
 #nav a {
     margin: 0px 25px;
+}
+.animation {
+    transform: translateX(-100px);
+    transition: transform linear 500ms;
+}
+.animation.in-view {
+    transform: translateX(0px);
 }
