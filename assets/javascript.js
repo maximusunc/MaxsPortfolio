@@ -7,7 +7,7 @@ $(document).ready(function(){
     $(window).trigger("scroll");
 });
 
-var $animationElements = $(".animation");
+var $animatedProject = $(".animatedProject");
 var $window = $(window);
 
 // materialize carousel
@@ -16,14 +16,20 @@ function carousel() {
     setTimeout(carousel, 1000);
 };
 
-
+$(".project").hover(function() {
+  $(this).css("opacity", 1);
+  $(this).find(".animatedDetails").addClass("showDetails");
+}, function() {
+  $(this).css("opacity", 0.8);
+  $(this).find(".animatedDetails").removeClass("showDetails");
+});
 
 function checkView() {
   var windowHeight = $window.height();
   var windowTop = $window.scrollTop();
   var windowBottom = (windowTop + windowHeight);
 
-  $.each($animationElements, function() {
+  $.each($animatedProject, function() {
     var $element = $(this);
     var elementHeight = $element.outerHeight();
     var elementTop = $element.offset().top;
@@ -31,8 +37,6 @@ function checkView() {
 
     if ((elementTop <= windowBottom) && (elementBottom >= windowTop)) {
       $element.addClass("in-view");
-    } else {
-      $element.removeClass("in-view");
     }
   })
 }

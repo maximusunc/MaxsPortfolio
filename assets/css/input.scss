@@ -58,11 +58,14 @@ main {
     opacity: 0.8;
     display: inline-block;
 }
-.project:hover {
-    opacity: 1;
-}
 .responsive-img {
     border-radius: 20px;
+    height: 400px;
+    overflow: hidden;
+}
+.project-img {
+    width: 100%;
+    height: 100%;
 }
 .top {
     text-align: center;
@@ -70,10 +73,17 @@ main {
 #nav a {
     margin: 0px 25px;
 }
-.animation {
-    transform: translateX(-100px);
+.animatedProject {
+    transform: translateY(100px);
     transition: transform linear 500ms;
 }
-.animation.in-view {
-    transform: translateX(0px);
+.animatedProject.in-view {
+    transform: translateY(0px);
+}
+.animatedDetails {
+    transition: all linear 500ms;
+}
+.animatedDetails.showDetails {
+    transform: translateY(-130px);
+    background-color: $background-color;
 }
