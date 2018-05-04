@@ -87,3 +87,8 @@ main {
     transform: translateY(-130px);
     background-color: $background-color;
 }
+@media screen and (max-width: 700px) {
+    .parallax-container {
+        height: 200px;
+    }
+}

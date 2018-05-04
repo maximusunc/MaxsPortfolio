@@ -83,4 +83,8 @@ main {
   transform: translateY(-130px);
   background-color: #004b66; }
 
+@media screen and (max-width: 700px) {
+  .parallax-container {
+    height: 200px; } }
+
 /*# sourceMappingURL=style.css.map */
