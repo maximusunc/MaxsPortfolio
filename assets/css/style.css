@@ -85,14 +85,12 @@ main {
 
 @media screen and (max-width: 700px) {
   .parallax-container {
-    height: 200px; } }
-@media (transition: none) {
+    height: 200px; }
+
   .animatedDetails {
     position: absolute;
-    bottom: 0;
+    bottom: -150px;
     font-size: 18px;
-    transition: none;
-    transform: none;
-    color: red; } }
+    padding-left: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
