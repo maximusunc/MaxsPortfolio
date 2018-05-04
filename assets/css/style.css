@@ -86,5 +86,12 @@ main {
 @media screen and (max-width: 700px) {
   .parallax-container {
     height: 200px; } }
+@media (hover: none) {
+  .animatedDetails {
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+    transition: none;
+    transform: none; } }
 
 /*# sourceMappingURL=style.css.map */
